@@ -1,38 +1,23 @@
-/*et num = 20;
-function showFirstMessage(text) {
-    alert(text);
-    let num = 10;
-    console.log(num);
+'use strict';
+
+function first() {
+    setTimeout( function() {
+        console.log(1);
+    }, 500 );
 }
 
-showFirstMessage("Hello World!");
-console.log(num);*/
-
-
-/*function calc(a,b) {
-    return (a + b);
-}*/
-
-let calc = (a,b) => a+b
-
-console.log(calc(3,4));
-console.log(calc(8,4));
-
-function retVar() {
-    let num = 50;
-    return num;
+function second() {
+    console.log(2);
 }
 
-let anotherNum = retVar();
-console.log(anotherNum);
+first();
+second();
 
-let str = "test";
-console.log(str.length);
+function LearnJS(lang, callback) {
+    console.log("Я учу " + lang);
+    callback();
+}
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-
-let twelve = "12.2px";
-//console.log(Math.round(twelve));
-console.log(parseInt(twelve));
-console.log(parseFloat(twelve));
+LearnJS("JavaScript", function() {
+    console.log("Я прошел 3 урок!")
+})
