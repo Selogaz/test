@@ -25,3 +25,6 @@ btn.addEventListener('click', function() {
     console.log(box.scrollTop);
     //document.documentElement.scrollTop = 0;//Отмотка страницы наверх при введении в консоль
 });
+
+scrollBy(0, 200);
+scrollTo(0, 200);
