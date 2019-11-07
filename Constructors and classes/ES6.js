@@ -1,10 +1,10 @@
 class User {
-    constructor(name, id) {//Функция-конструктор
+    constructor(name, id) {//Функция-конструктор, name и id - аргументы
         this.name = name;//Она используется для создания новых объектов
-        this.id = id;
+        this.id = id;//свойства класса
         this.human = true;
     }
-    hello() {
+    hello() {//методы класса
         console.log('Hello: $(this.name)');
     }
     exit() {
